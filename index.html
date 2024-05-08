@@ -3,7 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tugas RevoU</title>
+    <title>Linda Portofolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <style>
+      @media only screen and (max-width: 600px) {
+        .navigation-container {
+          flex-direction: column;
+        }
+        /* nav {
+          width : 100%
+          flex-direction: column;
+        } */
+        .navigation-icon {
+          margin-bottom: 14px;
+        }
+      }
+    </style> -->
   </head>
-  <body></body>
+  <body>
+    <header class="navigation-container">
+      <div class="navigation-icon"></div>
+
+      <nav>
+        <!-- <button type="button" id="home-btn">Home</button> -->
+        <button type="button">Home</button>
+        <button>Our Feature</button>
+        <button>Call Us</button>
+      </nav>
+    </header>
+    <hr />
+
+    <article class="content-container">
+      <header>
+        <h1>Bright Education</h1>
+        <p><i>"Belajar terasa lebih menyenangkan!"</i></p>
+      </header>
+
+      <section class="core-content">
+        <div class="core-item">
+          <div class="banner-item" style="background-image: url(assets/edukasi.jpg)"></div>
+          <div class="banner-item" style="background-image: url(assets/rangkuman.jpg)"></div>
+          <div class="banner-item" style="background-image: url(assets/quiz.jpg)"></div>
+          <div class="banner-item" style="background-image: url(assets/tryout.jpg)"></div>
+          <div class="banner-item" style="background-image: url(assets/live\ class.jpg)"></div>
+        </div>
+
+        <div class="core-item">
+          <header>
+            <h2>Contact Us</h2>
+          </header>
+          <form>
+            <table class="item-form">
+              <tr>
+                <td>Your Name</td>
+                <td>: <input class="content-form" id="form-name" type="text" size="50" placeholder="Your Name" required /></td>
+              </tr>
+              <tr>
+                <td>Phone Number</td>
+                <td>: <input class="content-form" id="form-phone" type="text" size="50" placeholder="Phone Number" required /></td>
+              </tr>
+              <tr>
+                <td>Email Address</td>
+                <td>: <input class="content-form" id="form-email" type="text" size="50" placeholder="Email Address" required /></td>
+              </tr>
+              <tr>
+                <td>Package</td>
+                <td>
+                  :
+                  <select class="content-form" id="form-package" required>
+                    <option disabled selected value="">Select Option...</option>
+                    <option>Bright Edu Silver</option>
+                    <option>Bright Edu Gold</option>
+                    <option>Bright Edu Platinum</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <center><input id="button-item-form" type="button" value="SEND" /></center>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </section>
+
+      <section class="our-feature-content">
+        <h1>Our Feature</h1>
+      </section>
+
+      <section class="our-feature">
+        <div class="feature">
+          <h3>Rangkuman</h3>
+          <img src="assets/rangkuman.jpg" />
+          <p>Dapatkan rangkuman materi yang lengkap dengan desain yang menarik! Cocok banget untuk review materi.</p>
+        </div>
+        <div class="feature">
+          <h3>Quiz</h3>
+          <img src="assets/quiz.jpg" />
+          <p>Uji pemahaman Rangkuman yang sudah kamu baca secara cepat dengan mengerjakan Quiz!</p>
+        </div>
+        <div class="feature">
+          <h3>Tryout</h3>
+          <img src="assets/tryout.jpg" />
+          <p>Soal tryout UTBK dibuat oleh alumni PTN terbaik dengan sistem penilaian IRT agar kamu masuk PTN impian!</p>
+        </div>
+        <div class="feature">
+          <h3>Live Class</h3>
+          <img src="assets/live class.jpg" />
+          <p>Kamu bisa belajar langsung bersama Tutor dan teman-teman yang lain, supaya kamu lebih memahami materi!</p>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="abc">
+        <h1></h1>
+        <p></p>
+        <center><input class="button-item-form" type="submit" value="SEND" /></center>
+      </section>
+
+      <hr />
+    </article>
+
+    <footer>
+      <p>Bright Education 2024</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

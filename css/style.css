@@ -1,1 +1,136 @@
-/* Ini CSS */
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navigation-icon {
+  background-image: url(../assets/image.png);
+  height: 40px;
+  width: 80px;
+  background-size: cover;
+}
+
+.navigation-container > nav > button {
+  height: 32px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.content-container > header {
+  text-align: center;
+}
+
+.content-container > header > p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #125b50;
+}
+
+.core-content {
+  display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+  .core-content {
+    flex-direction: column;
+  }
+}
+
+.core-item {
+  height: 300px;
+  width: 100%;
+  margin: 15px;
+}
+
+.banner-item {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.core-item > header > h2 {
+  text-align: center;
+}
+
+.item-form {
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 85px;
+  margin-right: 45px;
+}
+
+.content-form {
+  height: 25px;
+  width: 80%;
+  margin-left: 8px;
+  margin-bottom: 10px;
+  border: 1px solid darkgray;
+}
+
+#button-item-form {
+  margin-top: 10px;
+  width: 40%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+}
+
+.our-feature-content {
+  align-content: center;
+  background-color: antiquewhite;
+}
+
+.our-feature-content > h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.our-feature {
+  display: flex;
+}
+
+@media only screen and (max-width: 480px) {
+  .our-feature {
+    flex-direction: column;
+    /* padding */
+  }
+}
+
+.feature {
+  height: 320px;
+  border: 1px solid grey;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+}
+
+.feature > h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+.feature > img {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 25%;
+}
+
+.feature > p {
+  text-align: justify;
+  margin-top: 5px;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+footer {
+  text-align: end;
+}
