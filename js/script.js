@@ -69,7 +69,8 @@ function showSlide(index) {
 
 setInterval(() => nextSlide(1), 2000);
 
-document.getElementById("button-item-form").addEventListener("click", () => nextSlide(1));
+// document.getElementById("button-item-form").addEventListener("click", () => nextSlide(1));
+document.getElementById("button-item-form").addEventListener("click", () => validation());
 
 document.getElementById("form-name").addEventListener("input", function () {
   document.getElementById("form-name").style.border = "";

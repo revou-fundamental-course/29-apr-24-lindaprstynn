@@ -5,35 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linda Portofolio</title>
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <style>
-      @media only screen and (max-width: 600px) {
-        .navigation-container {
-          flex-direction: column;
-        }
-        /* nav {
-          width : 100%
-          flex-direction: column;
-        } */
-        .navigation-icon {
-          margin-bottom: 14px;
-        }
-      }
-    </style> -->
   </head>
   <body>
     <header class="navigation-container">
       <div class="navigation-icon"></div>
 
       <nav>
-        <!-- <button type="button" id="home-btn">Home</button> -->
-        <button type="button">Home</button>
-        <button>Our Feature</button>
-        <button>Call Us</button>
+        <button><a href="#content-container">Home</a></button>
+        <button><a href="#our-feature-content"> Our Feature</a></button>
+        <button><a href="#core-item-right">Call us</a></button>
       </nav>
     </header>
     <hr />
 
-    <article class="content-container">
+    <article class="content-container" id="content-container">
       <header>
         <h1>Bright Education</h1>
         <p><i>"Belajar terasa lebih menyenangkan!"</i></p>
@@ -41,54 +26,87 @@
 
       <section class="core-content">
         <div class="core-item">
-          <div class="banner-item" style="background-image: url(assets/edukasi.jpg)"></div>
-          <div class="banner-item" style="background-image: url(assets/rangkuman.jpg)"></div>
-          <div class="banner-item" style="background-image: url(assets/quiz.jpg)"></div>
-          <div class="banner-item" style="background-image: url(assets/tryout.jpg)"></div>
-          <div class="banner-item" style="background-image: url(assets/live\ class.jpg)"></div>
+          <div class="banner-item" style="background-image: url(assets/1.jpg)"></div>
+          <div class="banner-item" style="background-image: url(assets/2.jpg)"></div>
+          <div class="banner-item" style="background-image: url(assets/3.jpg)"></div>
+          <div class="banner-item" style="background-image: url(assets/4.jpg)"></div>
+          <div class="banner-item" style="background-image: url(assets/5.jpg)"></div>
+          <table class="profile-user">
+            <tr>
+              <th class="user-image"><img src="assets/profile.png" /></th>
+              <td><b>Divya A.</b> <br /><i>Mahasiswa, 18</i></td>
+            </tr>
+            <tr>
+              <th></th>
+              <td><i>"Bright Education menginspirasi dan membimbing setiap langkah menuju kesuksesan akademis yang gemilang."</i></td>
+            </tr>
+          </table>
+          <table class="information">
+            <tr>
+              <td colspan="2">
+                <center><b>Bright Education</b></center>
+              </td>
+            </tr>
+            <tr>
+              <th class="poin-image"><img src="assets/poin.png" /></th>
+              <td>
+                Akses Materi Berkualitas : <br />
+                Dapatkan akses tak terbatas ke materi pembelajaran berkualitas tinggi yang disusun oleh para ahli di bidangnya, mulai dari video pembelajaran, rangkuman, latihan soal, hingga ujian simulasi.
+              </td>
+            </tr>
+            <tr>
+              <th class="poin-image"><img src="assets/poin.png" /></th>
+              <td>
+                Tutor Ahli dan Dukungan Interaktif : <br />
+                Dapatkan bimbingan langsung dari tutor ahli yang siap membantu menjawab pertanyaan, memberikan penjelasan tambahan, dan memberikan dukungan interaktif melalui sesi tanya jawab online atau forum diskusi.
+              </td>
+            </tr>
+            <tr>
+              <th class="poin-image"><img src="assets/poin.png" /></th>
+              <td>
+                Kemajuan Terukur dan Rekomendasi Personalisasi : <br />
+                Pantau kemajuan belajar Anda melalui laporan perkembangan yang terukur dan terima rekomendasi personalisasi berdasarkan kinerja Anda untuk mempercepat pencapaian tujuan akademis Anda.
+              </td>
+            </tr>
+          </table>
         </div>
 
         <div class="core-item">
-          <header>
-            <h2>Contact Us</h2>
-          </header>
-          <form>
-            <table class="item-form">
-              <tr>
-                <td>Your Name</td>
-                <td>: <input class="content-form" id="form-name" type="text" size="50" placeholder="Your Name" required /></td>
-              </tr>
-              <tr>
-                <td>Phone Number</td>
-                <td>: <input class="content-form" id="form-phone" type="text" size="50" placeholder="Phone Number" required /></td>
-              </tr>
-              <tr>
-                <td>Email Address</td>
-                <td>: <input class="content-form" id="form-email" type="text" size="50" placeholder="Email Address" required /></td>
-              </tr>
-              <tr>
-                <td>Package</td>
-                <td>
-                  :
-                  <select class="content-form" id="form-package" required>
-                    <option disabled selected value="">Select Option...</option>
-                    <option>Bright Edu Silver</option>
-                    <option>Bright Edu Gold</option>
-                    <option>Bright Edu Platinum</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <center><input id="button-item-form" type="button" value="SEND" /></center>
-                </td>
-              </tr>
-            </table>
-          </form>
+          <div class="core-item-right" id="core-item-right">
+            <header>
+              <h2>Contact Us</h2>
+            </header>
+            <form class="item-form">
+              <div>
+                <label>Your Name</label> <br />
+                <input class="content-form" id="form-name" type="text" size="50" placeholder="Your Name" required />
+              </div>
+              <div>
+                <label>Phone Number</label> <br />
+                <input class="content-form" id="form-phone" type="text" size="50" placeholder="Phone Number" required />
+              </div>
+              <div>
+                <label>Email Address</label> <br />
+                <input class="content-form" id="form-email" type="text" size="50" placeholder="Email Address" required />
+              </div>
+              <div>
+                <label>Package</label> <br />
+                <select class="content-form" id="form-package" required>
+                  <option disabled selected value="">Select Option...</option>
+                  <option>Bright Edu Silver</option>
+                  <option>Bright Edu Gold</option>
+                  <option>Bright Edu Platinum</option>
+                </select>
+              </div>
+            </form>
+            <div>
+              <center><input id="button-item-form" type="button" value="SEND" /></center>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="our-feature-content">
+      <section class="our-feature-content" id="our-feature-content">
         <h1>Our Feature</h1>
       </section>
 
@@ -117,10 +135,9 @@
 
       <hr />
 
-      <section class="abc">
-        <h1></h1>
-        <p></p>
-        <center><input class="button-item-form" type="submit" value="SEND" /></center>
+      <section class="closing-argument">
+        <h1>Bergabunglah dengan kami hari ini untuk mengubah cara belajar dan mencapai potensi terbaik!</h1>
+        <button><a href="#core-item-right">CALL TO ACTION</a></button>
       </section>
 
       <hr />
